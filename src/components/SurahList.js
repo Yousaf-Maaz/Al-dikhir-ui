@@ -1,24 +1,24 @@
+// src/components/SurahList.js
 import React from 'react';
 
-export default function SurahList() {
+const SurahList = () => {
   const surahs = [
-    { number: 1, name: 'Al-Fatihah', translation: 'The Opener', ayahs: 7 },
-    { number: 2, name: 'Al-Baqarah', translation: 'The Cow', ayahs: 286 },
-    // Add more surahs as needed
+    { number: 1, name: "Al-Fatihah", englishName: "The Opener", ayahs: 7 },
+    { number: 2, name: "Al-Baqarah", englishName: "The Cow", ayahs: 286 },
+    // Add remaining surahs here
   ];
 
   return (
-    <section className="surah-list">
+    <div className="surah-list">
       {surahs.map(surah => (
-        <div key={surah.number} className="surah">
-          <div className="surah-number">{surah.number}</div>
-          <div className="surah-info">
-            <h4>{surah.name}</h4>
-            <p>{surah.translation}</p>
-            <span>{surah.ayahs} Ayahs</span>
-          </div>
+        <div key={surah.number} className="surah-card">
+          <h4>{surah.number}. {surah.name}</h4>
+          <p>{surah.englishName}</p>
+          <span>{surah.ayahs} Ayahs</span>
         </div>
       ))}
-    </section>
+    </div>
   );
-}
+};
+
+export default SurahList;

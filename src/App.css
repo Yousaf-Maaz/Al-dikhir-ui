@@ -1,57 +1,100 @@
+/* App.css */
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #b5e7a0;
+  background-color: #b3e6a1;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
+.app {
+  text-align: center;
+}
+
+/* Header */
 .header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #4caf50;
-}
-
-.logo h1 {
-  margin: 0;
-  color: #fff;
-}
-
-.user-section span {
-  margin-left: 10px;
-  color: #fff;
-}
-
-.search-bar {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.search-bar input {
-  padding: 5px;
-  width: 80%;
-}
-
-.main-content {
   padding: 20px;
+  background-color: #6cbb5a;
 }
 
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.app-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #002366;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  margin-right: 10px;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+  margin: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 8px;
+  margin-left: 5px;
+}
+
+/* Progress Section */
 .progress-section {
-  background-color: #fff;
-  padding: 10px;
-  margin-bottom: 20px;
+  background-color: #a3d4a7;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
 }
 
+.progress-bar h2, .progress-bar h3 {
+  color: #4d4d4d;
+}
+
+.quote {
+  font-style: italic;
+}
+
+/* Surah List */
 .surah-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  justify-content: center;
 }
 
-.surah {
-  background-color: #4caf50;
-  color: #fff;
-  padding: 10px;
-  flex-basis: calc(33.333% - 20px);
-  box-sizing: border-box;
-  border-radius: 5px;
+.surah-card {
+  background-color: #4d4d4d;
+  color: white;
+  margin: 10px;
+  padding: 15px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.surah-card h4, .surah-card p, .surah-card span {
+  margin: 5px 0;
 }
